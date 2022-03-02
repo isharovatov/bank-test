@@ -1,0 +1,32 @@
+.card {
+  position: relative;
+  width: 50%;
+  background-color: rgb(180, 177, 177);
+  padding: 20px;
+
+  .header {
+    font-size: 36px;
+    margin: 0 0 10px 30px;
+  }
+
+  .body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .params {
+      display: flex;
+      justify-content: space-between;
+      font-size: 26px;
+
+    }
+  }
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(197, 190, 190);
+  position: absolute;
+  top: 0;
+  right: -250px;
+}

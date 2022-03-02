@@ -1,0 +1,23 @@
+.operation {
+  font-size: 26px;
+  background: gray;
+  width: 75%;
+  margin: 5px;
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .params {
+      display: flex;
+      flex-direction: column;
+    }
+
+  }
+
+  .info {
+    display: flex;
+    font-size: 18px;
+    justify-content: space-between;
+  }
+}

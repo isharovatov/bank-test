@@ -1,0 +1,42 @@
+.root {
+  display: flex;
+  flex-direction: column;
+
+  .header{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    width: 100%;
+  }
+
+  .body{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+
+    .item {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+
+      .key{
+        display: flex;
+        justify-content: center;
+        width: 25%;
+        font-size: 28px;
+
+      }
+
+      .value{
+        display: flex;
+        justify-content: center;
+        width: 25%;
+        font-size: 28px;
+      }
+    }
+
+  }
+}
