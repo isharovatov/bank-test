@@ -1,13 +1,18 @@
 .operation {
   font-size: 26px;
-  background: gray;
+  background: rgba(57, 57, 175, 0.705);
+  padding: 20px;
+  border-radius: 15px ;
   width: 75%;
   margin: 5px;
+  color: white;
 
   .content {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 15px;
+
     .params {
       display: flex;
       flex-direction: column;

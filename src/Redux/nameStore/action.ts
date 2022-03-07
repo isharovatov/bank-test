@@ -1,4 +1,17 @@
-import { auth, getToken, getUuid, getId, getMe, getCard, createCard1, getOperations1, creatOperations1 } from './service';
+import { 
+  auth,
+  getToken,
+  getUuid,
+  getId,
+  getMe,
+  getCard,
+  createCard1,
+  getOperations1,
+  creatOperations1,
+  deleteCard1,
+  changePassword1,
+  changeUsername1
+} from './service';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 // import { userInterfece, changesNameInterfece, getLimitUserInterfece } from '../../../types/ContainerTypes';
 
@@ -74,3 +87,26 @@ export const creatOperations = createAsyncThunk(
   }
 );
 
+export const deleteCard = createAsyncThunk(
+  'delete_card',
+  async (id:string) => {
+    const response = await deleteCard1(id);
+    return response;
+  }
+);
+
+export const changePassword = createAsyncThunk(
+  'delete_card',
+  async (data:any) => {
+    const response = await changePassword1(data);
+    return response;
+  }
+);
+
+export const changeUsername = createAsyncThunk(
+  'delete_card',
+  async (data:any) => {
+    const response = await changeUsername1(data);
+    return response;
+  }
+);

@@ -4,6 +4,7 @@ import { getUserId, getUserUuid } from '../../Redux/nameStore/action';
 import { AccountComponent } from '../../components/AccountComponent';
 import { OperationsComponent } from '../../components/OperationsComponent';
 import { CardsComponent } from '../../components/CardsComponent';
+import './Home.scss';
 
 export const Home = () => {
   const dispatch = useDispatch();
@@ -16,7 +17,12 @@ export const Home = () => {
   const getIds = async () => {
     await dispatch(getUserId())
     await dispatch(getUserUuid())
-  } 
+  };
+
+  const leave = () => {
+    localStorage.clear();
+    window.location.pathname = ''
+  }
 
   const renderComponent = () => {
     switch (nameComponent) {
@@ -30,14 +36,21 @@ export const Home = () => {
   if (!localStorage.getItem('access_token')) window.location.pathname = '/'
 
   return (
-    <div>
-      <div>{localStorage.getItem('name')}</div>
-      <div>
-        <button onClick={() => setNameComponent('account')}>Акаунт</button>
-        <button onClick={() => setNameComponent('cards')}>Карты</button>
-        <button onClick={() => setNameComponent('operations')}>Операции</button>
+    <div className='headerRoot'>
+      <div className='header'>
+        <div className='accountName'>{localStorage.getItem('name')}</div>
+        <div className='buttons'>
+          <button className='btn' onClick={() => setNameComponent('account')}>Акаунт</button>
+          <button className='btn' onClick={() => setNameComponent('cards')}>Карты</button>
+          <button className='btn' onClick={() => setNameComponent('operations')}>Операции</button>
+        </div>
       </div>
-      {renderComponent()}
+      <div className='homeContent'>
+        {renderComponent()}
+      </div>
+      <div className='exit'>
+        <button className='btn' onClick={leave}>Выйти</button>
+      </div>
     </div>
   )
 }

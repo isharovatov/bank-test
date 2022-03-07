@@ -34,6 +34,11 @@ export const TODO_TYPE = {
     SUCCESS: "create_cards/fulfilled",
     ERROR: "create_cards/rejected"
   },
+  DELETE_CARD: {
+    START: "delete_card/pending",
+    SUCCESS: "delete_card/fulfilled",
+    ERROR: "delete_card/rejected"
+  },
   GET_OPERATIONS: {
     START: "get_operations/pending",
     SUCCESS: "get_operations/fulfilled",

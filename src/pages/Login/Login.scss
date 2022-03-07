@@ -1,5 +1,5 @@
 .page{
-  background-color: blue;
+  background-color: rgba(167, 167, 241, 0.753);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,8 +9,69 @@
     display: flex;
     flex-direction:column;
     align-items: center;
-    background-color: red;
+    justify-content: center;
+    background-color: rgba(123, 123, 240, 0.63);
     width: 50%;
     height: 50%;
+    border-radius: 25px;
+
+    .header {
+      font-size: 36px;
+      color: white;
+      margin-bottom: 25px;
+    }
+
+    .input {
+      border: none;
+      border-radius: 10px;
+      font-size: 15px;
+      background-color: rgba(180, 180, 243, 0.712);
+      height: 25px;
+      margin-bottom: 10px;
+    }
+
+    .entry {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 25%;
+      height: 30px;
+      border-radius: 5px;
+      border: none;
+      margin: 5px;
+      color: white;
+      background-color: rgba(180, 180, 243, 0.712);
+      font-size: 18px;
+    }
+
+    .registr {
+      width: 50%;
+    }
+
+    .loginText {
+      color: white;
+      font-size: 23px;
+    }
+
+    .inputPassword {
+      position: relative;
+
+      .btn {
+        position: absolute;
+        right: 5px;
+        background-color: transparent;
+        border: none;
+      }
+
+      svg {
+        path {
+          stroke: rgba(75, 75, 187, 0.89);;
+        }
+
+        circle {
+          stroke: rgba(75, 75, 187, 0.89);;
+        }
+      }
+    }
   }
 }

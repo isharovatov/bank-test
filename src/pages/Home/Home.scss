@@ -1,0 +1,51 @@
+.headerRoot {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: rgba(167, 167, 241, 0.753);
+
+
+  .header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(123, 123, 240, 0.63);
+    padding: 20px 0;
+    color: rgba(4, 4, 63, 0.705);
+
+    .accountName {
+      font-size: 60px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+
+  .homeContent {
+    overflow-y: auto;
+    max-height: 70vh;
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
+    color: white;
+    background-color: rgba(70, 70, 133, 0.692);
+    font-size: 25px;
+  }
+  .exit {
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,14 +1,11 @@
 import { useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux"
-import { Operation } from '../operation'
+import { Operation } from '../Operation'
 import { getOperations } from '../../Redux/nameStore/action';
-
 
 export const OperationsComponent = () => {
   const dispatch = useDispatch()
-  const operations = useSelector((state:any) => state.operations)
-  console.log(operations);
-  
+  const operations = useSelector((state:any) => state.operations)  
 
   useEffect(() => {
     dispatch(getOperations())
@@ -27,11 +24,11 @@ export const OperationsComponent = () => {
             to_card={item.to_card}
             amount={item.amount}
             type={item.type}
+            key={index}
           />
         ))}
         </>
       )}
-      operation
     </div>
   )
 }

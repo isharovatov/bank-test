@@ -51,8 +51,6 @@ export const Operation = ({...props}) => {
         <div>Тип операции:<span>{props.type}</span></div>
         <div>Сумма:<span>{props.amount}</span></div>
       </div>
-      
     </div>
   )
-
 }

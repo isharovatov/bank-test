@@ -7,6 +7,8 @@
     justify-content: center;
     font-size: 40px;
     width: 100%;
+    background-color: rgba(0, 0, 255, 0) !important;
+    padding-bottom: 0 !important;
   }
 
   .body{
@@ -15,28 +17,48 @@
     justify-content: center;
     flex-direction: column;
     width: 100%;
+    padding-bottom: 20px;
+
+    .input {
+      border: none;
+      border-radius: 10px;
+      font-size: 15px;
+      background-color: rgba(232, 232, 247, 0.712);
+      height: 25px;
+      // margin-bottom: 10px;
+      margin: 0 10px 0 10px;
+    
+    }
 
     .item {
       display: flex;
       flex-direction: row;
       justify-content: center;
+      align-items: center;
       width: 100%;
 
       .key{
         display: flex;
-        justify-content: center;
-        width: 25%;
+        // width: 25%;
         font-size: 28px;
-
+        color: rgba(4, 4, 63, 0.705);
       }
 
       .value{
         display: flex;
-        justify-content: center;
         width: 25%;
         font-size: 28px;
+        color: rgba(4, 4, 63, 0.705);
       }
     }
 
+    .changeParamsForm {
+      margin-bottom: 25px; 
+    }
+
+    .changeParamsBtn {
+      width: 50%;
+      margin: 0 0 25px 25%;
+    }
   }
 }
